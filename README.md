@@ -6,3 +6,7 @@ Group members: Alice Wang, Ming Lin, Kelvin Mo, Rodrigo Gameiro
 2. Ming: AI Clinical Trial Matching & Simulation - Clinical trial enrollment is inefficient because eligibility criteria are complex, clinicians lack time to screen patients, and current tools rarely estimate whether a patient is likely to benefit or experience harm. We can build a multimodal AI system that not only matches patients to trials but also simulates expected outcomes, risks, and uncertainties to support informed and personalized decisions.
 3. Patient Summary Generation: Using large language models to turn messy clinical notes and scattered EHR data from MIMIC into clean, structured patient summaries, helping clinicians quickly understand a patient's full story without digging through dozens of notes.
 4. Using diffusion models over single-cell embeddings that defines each cell's disease contribution via counterfactual projection between responder and non-responder manifolds to predict patient survival
+
+
+Drive: https://drive.google.com/drive/folders/1bGeuiEOEGqq0HsoTBHPv72s5M-pr0QWu?usp=sharing
+
