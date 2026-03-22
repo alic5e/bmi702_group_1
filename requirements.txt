@@ -1,0 +1,24 @@
+# Local environment (Apple Silicon Mac)
+# For GPU inference on Colab, use requirements_colab.txt
+
+torch>=2.1
+torchvision>=0.16
+transformers>=4.38
+tokenizers>=0.15
+datasets>=2.18
+sentence-transformers>=2.5
+faiss-cpu>=1.7
+rouge-score>=0.1.2
+bert-score>=0.3.13
+nltk>=3.8
+wfdb>=4.1
+pandas>=2.0
+numpy>=1.24
+pyarrow>=14.0
+matplotlib>=3.7
+seaborn>=0.12
+pyyaml>=6.0
+python-dotenv>=1.0
+tqdm>=4.65
+loguru>=0.7
+jupyterlab>=4.0

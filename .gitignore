@@ -1,0 +1,38 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# No patient data
+data/
+*.csv
+*.csv.gz
+*.h5
+*.hdf5
+*.pkl
+*.parquet
+
+# Results
+results/**
+!results/.gitkeep
+
+# Model weights
+*.pt
+*.pth
+*.bin
+*.safetensors
+faiss_indices/
+
+# Logs
+logs/
+*.log
+wandb/
+
+# Env
+.env
+.venv

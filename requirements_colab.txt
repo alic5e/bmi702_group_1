@@ -1,0 +1,24 @@
+# Colab GPU environment — install at top of notebook:
+# !pip install -r requirements_colab.txt
+
+# LLM inference
+transformers>=4.38
+accelerate>=0.27
+bitsandbytes>=0.42
+peft>=0.8
+
+# Embeddings + retrieval
+sentence-transformers>=2.5
+faiss-gpu>=1.7
+
+# Evaluation
+rouge-score>=0.1.2
+bert-score>=0.3.13
+
+# Data
+pandas>=2.0
+datasets>=2.18
+
+# Config
+pyyaml>=6.0
+tqdm>=4.65

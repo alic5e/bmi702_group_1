@@ -1,0 +1,54 @@
+# 702-Project-Private environment
+# Local Mac (Apple Silicon) — data work + prototyping
+# Heavy inference runs on Google Colab
+name: 702-project
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+
+  # Data wrangling
+  - pandas>=2.0
+  - numpy>=1.24
+  - pyarrow>=14.0
+
+  # Jupyter
+  - jupyterlab>=4.0
+  - ipykernel>=6.25
+
+  # Visualization
+  - matplotlib>=3.7
+  - seaborn>=0.12
+
+  # Config
+  - pyyaml>=6.0
+  - python-dotenv>=1.0
+
+  # Utilities
+  - tqdm>=4.65
+  - loguru>=0.7
+
+  # pip-only packages
+  - pip
+  - pip:
+    # PyTorch (MPS-compatible for Apple Silicon)
+    - torch>=2.1
+    - torchvision>=0.16
+
+    # NLP core
+    - transformers>=4.38
+    - tokenizers>=0.15
+    - datasets>=2.18
+
+    # Embeddings + retrieval
+    - sentence-transformers>=2.5
+    - faiss-cpu>=1.7
+
+    # Evaluation
+    - rouge-score>=0.1.2
+    - bert-score>=0.3.13
+    - nltk>=3.8
+
+    # MIMIC data access
+    - wfdb>=4.1

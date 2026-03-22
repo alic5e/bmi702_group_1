@@ -1,12 +1,49 @@
-# BMI 702/ BMIF 203
-Group members: Alice Wang, Ming Lin, Kelvin Mo, Rodrigo Gameiro
+# ICU Patient Summary Generation with LLMs
 
-## IDEAS
-1. Build and compare machine learning models that predict short-term clinical deterioration (e.g., mortality within next 12–24 hours) using longitudinal ICU data.
-2. Ming: AI Clinical Trial Matching & Simulation - Clinical trial enrollment is inefficient because eligibility criteria are complex, clinicians lack time to screen patients, and current tools rarely estimate whether a patient is likely to benefit or experience harm. We can build a multimodal AI system that not only matches patients to trials but also simulates expected outcomes, risks, and uncertainties to support informed and personalized decisions.
-3. Patient Summary Generation: Using large language models to turn messy clinical notes and scattered EHR data from MIMIC into clean, structured patient summaries, helping clinicians quickly understand a patient's full story without digging through dozens of notes.
-4. Using diffusion models over single-cell embeddings that defines each cell's disease contribution via counterfactual projection between responder and non-responder manifolds to predict patient survival
+**AIM2 Course Project — Group 1**
+
+Generating structured ICU patient summaries from fragmented clinical notes and EHR data using retrieval-augmented generation (RAG) with large language models.
 
 
-Drive: https://drive.google.com/drive/folders/1bGeuiEOEGqq0HsoTBHPv72s5M-pr0QWu?usp=sharing
+## Quick links
 
+- [Project guide](docs/project_guide_v4_final.md) — full plan, datasets, repos, references
+- [Pipeline overview](docs/figures/pipeline_overview_v4.png)
+- [Timeline](docs/figures/project_timeline.png)
+- [Resource map](docs/figures/resource_map.png)
+
+## Project structure
+
+```
+├── docs/               # Project guide, figures, proposal
+├── notebooks/          # Exploration and prototyping
+├── src/                # Source code (added as we build)
+├── configs/            # Experiment configs
+├── scripts/            # Runnable scripts
+├── data/               # .gitignored — local MIMIC data
+└── results/            # .gitignored — experiment outputs
+```
+
+## Datasets (require PhysioNet credentials)
+
+- **Primary**: [VeriFact-BHC](https://physionet.org/content/mimic-iii-ext-verifact-bhc/1.0.0/) — 100 MIMIC-III patients
+- **Structured data**: [MIMIC-III v1.4](https://physionet.org/content/mimiciii/1.4/)
+- **Ablation**: [MIMIC-IV-Ext-BHC](https://physionet.org/content/labelled-notes-hospital-course/1.2.0/)
+
+> ⚠️ No patient data is committed to this repository.
+
+## Setup
+
+```bash
+# Create environment
+mamba env create -f environment.yml
+conda activate 702-project
+
+# Verify
+python -c "import torch; print(f'PyTorch {torch.__version__}, MPS: {torch.backends.mps.is_available()}')"
+python -c "import transformers; print(f'Transformers {transformers.__version__}')"
+python -c "import faiss; print('FAISS ready')"
+```
+## Drive
+
+Link: https://drive.google.com/drive/folders/1GxRiP60ByW-IuDxoXJYQuZipRSnrh9-R
