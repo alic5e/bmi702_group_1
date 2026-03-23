@@ -36,3 +36,6 @@ wandb/
 # Env
 .env
 .venv
+
+# Notes (add notes folder here later)
+
