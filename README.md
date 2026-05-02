@@ -102,4 +102,4 @@ https://drive.google.com/drive/folders/1GxRiP60ByW-IuDxoXJYQuZipRSnrh9-R
 
 ## Contributions
 
-Rodrigo Gameiro led the primary VeriFact-BHC pipeline (data, baseline, RAG iterations, cross-model port, proposition recall) and report writing. Alice Wang led the MIMIC-IV-Ext-BHC ablation. Ming Lin and Kelvin Mo built the LLM-as-judge evaluation pipeline and analysis. All authors contributed to study design and interpretation.
+Rodrigo Gameiro led the primary VeriFact-BHC pipeline (data, baseline, RAG iterations, cross-model port, proposition recall). Alice Wang led the MIMIC-IV-Ext-BHC ablation. Ming Lin and Kelvin Mo built the LLM-as-judge evaluation pipeline and analysis. All authors contributed to study design, interpretation, and report writing.
